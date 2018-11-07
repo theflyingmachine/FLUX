@@ -2,16 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#7a55d6" >
-
-    <ImageView
-        android:id="@+id/imgLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="182dp"
-        android:src="@mipmap/comp_logo" />
+    android:background="#1E90FF" >
 
     <TextView
         android:id="@+id/textView2"
@@ -21,7 +12,20 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="18dp"
         android:text="FrontLine Unified Xperience"
+        android:textColor="#FFFFFF"
         android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="224dp"
+        android:text="FLUX"
+        android:textSize="64dp"
+        android:textColor="#FFFFFF"
+        android:textAppearance="@android:style/TextAppearance.Holo.Widget.Button" />
 
 
 </RelativeLayout>

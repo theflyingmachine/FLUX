@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         WebView webView = (WebView) findViewById(R.id.webview);
 
-        webView.loadUrl("https://www.journaldev.com");
         this.WebView = (WebView) findViewById(R.id.webview);
 
         WebSettings webSettings = webView.getSettings();
@@ -41,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         webView.setWebViewClient(webViewClient);
 
 //        webView.loadUrl("https://cyberboy.in");
-        webView.loadUrl("http://corpindat01/SO_FLE/view.php");
+        webView.loadUrl("http://corpindat01.northamerica.cerner.net/SO_FLE/view_mobile.php");
     }
 
 
