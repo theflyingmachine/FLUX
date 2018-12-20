@@ -1,7 +1,9 @@
 package com.ericabraham.flux.flux;
 
+import android.net.http.SslError;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.webkit.SslErrorHandler;
 import android.webkit.WebView;
 import android.app.Activity;
 import android.os.Bundle;
@@ -39,10 +41,14 @@ public class MainActivity extends AppCompatActivity {
         WebViewClientImpl webViewClient = new WebViewClientImpl(this);
         webView.setWebViewClient(webViewClient);
 
-//        webView.loadUrl("https://cyberboy.in");
-        webView.loadUrl("http://corpindat01.northamerica.cerner.net/SO_FLE/view_mobile.php");
-    }
 
+
+//        webView.loadUrl("https://cyberboy.in");http://corpindat01.northamerica.cerner.net/SO_FLE/status
+//        webView.loadUrl("https://sofle.cerner.com/SO_FLE/view_mobile.php");
+        webView.loadUrl("http://corpindat01.northamerica.cerner.net/SO_FLE/view_mobile.php");
+//        webView.loadUrl("https://10.182.235.218/SO_FLE/view_mobile.php");
+
+    }
 
     private class WebViewClientImpl extends WebViewClient {
         public WebViewClientImpl(MainActivity mainActivity) {
