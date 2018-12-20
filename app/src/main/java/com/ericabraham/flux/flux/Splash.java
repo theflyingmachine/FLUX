@@ -49,5 +49,14 @@ public class Splash  extends AppCompatActivity {
                 new checkServer(getApplicationContext()).execute();
             }
         }, SPLASH_TIME_OUT);
-    }
+        new Handler().postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                finish();
+                //Toast.makeText(Splash.this, "Splash Killed", Toast.LENGTH_SHORT).show();
+            }
+        }, 10000);
+       }
+
 }
