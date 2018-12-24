@@ -19,7 +19,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     SwipeRefreshLayout mySwipeRefreshLayout;
-    String url ="http://corpindat01.northamerica.cerner.net/SO_FLE/view_mobile.php";
+    String url ="http://corpindat01.northamerica.cerner.net/SO_FLE/home.php";
 
 //    private WebView WebView;
     private WebView view;

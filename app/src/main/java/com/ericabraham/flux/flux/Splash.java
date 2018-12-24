@@ -56,7 +56,7 @@ public class Splash  extends AppCompatActivity {
                 finish();
                 //Toast.makeText(Splash.this, "Splash Killed", Toast.LENGTH_SHORT).show();
             }
-        }, 10000);
+        }, 13000);
        }
 
 }

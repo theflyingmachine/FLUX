@@ -30,7 +30,7 @@ class checkServer extends AsyncTask<String, Void, Integer> {
 //            URL url = new URL("http://corpindat01.northamerica.cerner.net/SO_FLE/status");
             HttpURLConnection conn = (HttpURLConnection)url.openConnection();
             Log.d(TAG, "getResponse: "+conn.getResponseCode());
-            conn.setConnectTimeout(1000*10);
+            conn.setConnectTimeout(1000*8);
             temp=conn.getResponseCode();
 
         }catch (Exception e){
